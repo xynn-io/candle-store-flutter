@@ -1,6 +1,6 @@
+import 'package:candle_store_flutter/data/constants.dart';
+import 'package:candle_store_flutter/widgets/details_page.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/data/constants.dart';
-import 'package:myapp/widgets/details_page.dart';
 
 void main() {
   runApp(const Application());
@@ -12,7 +12,7 @@ class Application extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Intro Day - Flutter',
+      title: 'Candle Store Coding Challenge Dart & Flutter',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: purple),

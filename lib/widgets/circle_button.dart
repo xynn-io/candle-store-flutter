@@ -1,6 +1,6 @@
+import 'package:candle_store_flutter/data/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:myapp/data/constants.dart';
 
 class CircleButton extends StatelessWidget {
   const CircleButton({super.key, required this.onTap, required this.image});

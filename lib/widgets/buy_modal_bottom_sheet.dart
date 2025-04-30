@@ -1,5 +1,5 @@
+import 'package:candle_store_flutter/data/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/data/constants.dart';
 
 class BuyModalBottomSheet extends StatelessWidget {
   const BuyModalBottomSheet({super.key, required this.text});
@@ -16,8 +16,10 @@ class BuyModalBottomSheet extends StatelessWidget {
       child: Center(
         child: Text(
           text,
-          style:
-              const TextStyle(color: white, fontSize: fontSizeModalBottomSheet),
+          style: const TextStyle(
+            color: white,
+            fontSize: fontSizeModalBottomSheet,
+          ),
         ),
       ),
     );
