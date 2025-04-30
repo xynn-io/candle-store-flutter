@@ -1,11 +1,10 @@
 # To learn more about how to use Nix to configure your environment
-# see: https://developers.google.com/idx/guides/customize-idx-env
+# see: https://firebase.google.com/docs/studio/customize-workspace
 { pkgs, ... }: {
   # Which nixpkgs channel to use.
-  channel = "stable-23.11"; # or "unstable"
+  channel = "stable-24.05"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    pkgs.nodePackages.firebase-tools
     pkgs.jdk17
     pkgs.unzip
   ];
@@ -39,9 +38,7 @@
           # TODO: Execute web build in debug mode.
           # flutter run does this transparently either way
           # https://github.com/flutter/flutter/issues/96283#issuecomment-1144750411
-          # flutter build web --profile --dart-define=Dart2jsOptimization=O0 
-
-          adb -s localhost:5555 wait-for-device
+          # flutter build web --profile --dart-define=Dart2jsOptimization=O0
         '';
       };
       
@@ -63,3 +60,4 @@
     };
   };
 }
+
